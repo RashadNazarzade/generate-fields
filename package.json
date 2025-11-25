@@ -1,6 +1,6 @@
 {
-  "name": "field-name-generator",
-  "version": "0.0.2",
+  "name": "react-hook-form-field-generator",
+  "version": "0.0.1",
   "description": "",
   "scripts": {
     "build": "tsc",
@@ -14,9 +14,9 @@
     "prepublishOnly": "bun ci"
   },
   "keywords": [
-    "yup",
+    "react hook form",
     "field-name-generator",
-    "generator fields"
+    "fields generator"
   ],
   "author": "Glitch",
   "repository": {
