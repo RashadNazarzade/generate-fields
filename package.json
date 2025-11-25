@@ -9,7 +9,9 @@
     "format:src": "prettier --write src/**/*.ts",
     "format:check": "prettier --check .",
     "format:check:src": "prettier --check src/**/*.ts",
-    "test": "vitest run"
+    "test": "vitest run",
+    "local:release": "changeset version && changeset publish",
+    "prepublishOnly": "bun ci"
   },
   "keywords": [
     "yup",
@@ -28,6 +30,7 @@
   "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.29.7",
     "prettier": "^3.6.2",
     "typescript": "^5.9.3",
     "vitest": "^4.0.10"
