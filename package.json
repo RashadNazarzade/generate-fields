@@ -1,0 +1,35 @@
+{
+  "name": "field-name-generator",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "ci": "bun run build && bun format:check && bun test",
+    "format": "prettier --write .",
+    "format:src": "prettier --write src/**/*.ts",
+    "format:check": "prettier --check .",
+    "format:check:src": "prettier --check src/**/*.ts",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "yup",
+    "field-name-generator",
+    "generator fields"
+  ],
+  "author": "Glitch",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.10"
+  }
+}
